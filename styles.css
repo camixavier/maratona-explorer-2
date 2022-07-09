@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a { 
+  text-decoration: none;
+}
+
+html {
+  --bg-color: #ffe1ff;
+  --text-color: #00082F;
+  --primary-color: #BA55D3;
+  --primary-color-dark: #8B008B;
+}
+
+body.dark-purple {
+  --bg-color: #320032; 
+  --text-color: #FFFFFF;
+}
+
+body.blue {
+  --bg-color: #6c4fba;
+  --text-color: #1F000B;
+  --primary-color: #1F000B;
+  --primary-color-dark:#353131; 
+  }
+
+body.gradient {
+  --text-color: #1F000B;
+  --primary-color: #1F000B;
+  --primary-color-dark:#48217b; 
+  background: linear-gradient(90deg, #495C83, #7A86B6, #A8A4CE, #C8B6E2);
+  background-size: auto;
+  }
+
+body.yellow {
+  --bg-color: #e2e471;
+  --text-color: #000000;
+  --primary-color: #000000;
+  --primary-color-dark:#bfa03c;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  text-align: center;
+  width: 300px;
+  margin: 60px auto; 
+}
+
+img.avatar {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 3.7px;
+  border: var(--primary-color) solid 4px;
+
+}
+
+img.icon-linkedin {
+  margin-right: 5px;
+}
+
+img.icon-facebook {
+  margin-right: 5px;
+}
+
+img.icon-instagram {
+  margin-right: 5px;
+}
+
+img.icon-github {
+  margin-right: 5px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+
+.username {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  opacity: 0.8;
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+  margin: 40px 0;
+}
+
+
+ul li a {
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+
+  margin-bottom: 16px;
+  border-radius: 6px;
+
+  transition: background 400ms;
+
+}
+
+ul li a:hover {
+  background: var(--primary-color-dark);
+}
+
+footer {
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 0.6;
+  transition: opacity 400ms;
+}
+
+footer:hover {
+  opacity: 1;
+
+}
+
+footer a {
+  color: var(--text-color);
+}
